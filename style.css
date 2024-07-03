@@ -44,6 +44,7 @@
   font-size: larger;
   color: azure;
   font-weight: bolder;
+  text-align: justify;
 }
 
 .items3 {
@@ -56,6 +57,7 @@
 
 .ach {
   width: 40vw;
+  text-align: justify;
 }
 
 .items4 {
@@ -89,6 +91,29 @@
   color: white;
 }
 
+@media screen and (max-width: 768px) {
+  .items2 {
+    height: 450px;
+  }
+  .img1 {
+    width: 500px;
+  }
+  .quotes {
+    width: 35vw;
+    margin-right: 20px;
+    text-align: justify;
+  }
+
+  .ach {
+    width: 60vw;
+    text-align: justify;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
 @media screen and (max-width: 480px) {
   .items1 {
     width: 100vw;
@@ -107,10 +132,12 @@
 
   .quotes {
     width: 60vw;
+    text-align: justify;
   }
 
   .ach {
     width: 60vw;
+    text-align: justify;
   }
   .items4 {
     height: 1000px;
